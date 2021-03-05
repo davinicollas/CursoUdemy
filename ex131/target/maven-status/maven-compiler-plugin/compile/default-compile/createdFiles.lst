@@ -1,0 +1,4 @@
+application\Apllication.class
+entities\Product.class
+entities\UsedProduct.class
+entities\ImportedProduct.class
