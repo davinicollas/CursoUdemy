@@ -27,3 +27,14 @@ publix static int max(int x, int y, int z) quando recebe variaveis;
 
 função que recebe vazio void;
 publix static void (variavel que recebe) função que nao retorna nada;
+
+
+git 
+
+git init
+git remote add origin  "HTTPS git"
+git pull origin "Branch"
+git add .
+git commit -m "Material de curso java"
+git push -u origin master
+

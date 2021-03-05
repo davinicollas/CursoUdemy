@@ -7,8 +7,7 @@ package model.entities;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-import java.text.SimpleDateFormat;  
-
+import java.text.SimpleDateFormat;
 
 /**
  *
@@ -19,9 +18,8 @@ public class Reservation {
     private Integer rooNumber;
     private Date checkIn;
     private Date checkOut;
-    
-    
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");  
+
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reservation(Integer rooNumber, Date checkIn, Date checkOut) {
         this.rooNumber = rooNumber;
@@ -50,20 +48,27 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public void updateDates(Date checkIn, Date checkOut) {
-
+    public String updateDates(Date checkIn, Date checkOut) {
+        Date now = new Date();
+        if (checkIn.before(now) || checkOut.before(now)) {
+            return "Error in reservation: Reservation dates for update must be future dates";
+        }
+        if (!checkOut.after(checkIn)) {
+            return "Error in reservation: Check-out date must be after check-in date";
+        }
         this.checkIn = checkIn;
         this.checkOut = checkOut;
+        return null;
 
     }
-    
-    public String toString(){
+
+    public String toString() {
         return "Room "
                 + rooNumber
-                + ", check-In: " 
+                + ", check-In: "
                 + sdf.format(checkIn)
                 + ", "
-                + duration() 
+                + duration()
                 + "nights";
     }
 
