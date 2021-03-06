@@ -5,12 +5,8 @@
  */
 package application;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
+
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -20,15 +16,24 @@ import java.util.Scanner;
 public class Program {
 
     public static void main(String[] args) {
-        String[] line = new String[]{"Test", "Test"};
-        String path = "c:\\temp\\out.txt";
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))) {
-            for (String lines : line) {
-                bw.write(lines);
-                bw.newLine();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a path");
+        String strPath = sc.nextLine();
+        
+        File path = new File(strPath);
+        File[] folders = path.listFiles(File::isDirectory);
+        System.out.println("Folders");
+        for(File folder: folders){
+            System.out.println(folder);
         }
-    }
+        File [] files = path.listFiles(File::isFile);
+        System.out.println("FILES:");
+        for(File file: files){
+            System.out.println(file);
+        }
+        boolean sucess = new File(strPath + "\\Sbdir").mkdir();
+        System.out.println("sucesso" + sucess);
+        sc.close();
+               
+        }
 }
