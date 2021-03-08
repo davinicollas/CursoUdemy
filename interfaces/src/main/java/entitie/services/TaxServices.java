@@ -9,15 +9,8 @@ package entitie.services;
  *
  * @author davi nicollas
  */
-public class BrazilTaxServices implements TaxServices {
-
-    public double tax(double amount) {
-        if (amount <= 100.0) {
-            return amount * 0.2;
-
-        } else {
-            return amount * 0.15;
-        }
-    }
-
+public interface TaxServices {
+    
+    double tax(double amount);
+    
 }
