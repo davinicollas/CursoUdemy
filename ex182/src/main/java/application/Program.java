@@ -5,7 +5,6 @@
  */
 package application;
 
-
 import java.io.File;
 import java.util.Scanner;
 
@@ -19,21 +18,13 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a path");
         String strPath = sc.nextLine();
-        
+
         File path = new File(strPath);
-        File[] folders = path.listFiles(File::isDirectory);
-        System.out.println("Folders");
-        for(File folder: folders){
-            System.out.println(folder);
-        }
-        File [] files = path.listFiles(File::isFile);
-        System.out.println("FILES:");
-        for(File file: files){
-            System.out.println(file);
-        }
-        boolean sucess = new File(strPath + "\\Sbdir").mkdir();
-        System.out.println("sucesso" + sucess);
+        System.out.println("getName: " + path.getName());
+        System.out.println("getParent: " + path.getParent());
+        System.out.println("getPATH: " + path.getPath());
+
         sc.close();
-               
-        }
+
+    }
 }
