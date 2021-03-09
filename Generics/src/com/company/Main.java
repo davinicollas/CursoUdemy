@@ -20,6 +20,7 @@ public class Main{
         }
 
         ps.print();
+        Object x = ps.first();
         System.out.println("First: " + ps.first());
 
         sc.close();
