@@ -3,14 +3,15 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-    private List<Object> list = new ArrayList<>();
+public class PrintService<Type> {
+    private List<Type> list = new ArrayList<>();
 
-    public void addValue(Object value) {
+    public void addValue(Type value) {
+
         list.add(value);
     }
 
-    public Object first() {
+    public Type first() {
         if (list.isEmpty()) {
             throw new IllegalStateException("List is empty");
         }
