@@ -54,3 +54,9 @@ erro
 • A lógica fica estruturada em condicionais aninhadas
 Logica 3 boa tratamento de excecões
 
+
+
+Ao usar o compareTo e necessario no return colocar a forma de como voce vai ordenar as informação
+sempre lembrar que o collection coloca o comparato quando tiver mais que um dado
+
+-salary.compareTo(o.getSalary());
