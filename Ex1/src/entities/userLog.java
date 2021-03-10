@@ -28,6 +28,24 @@ public class userLog {
         this.data = data;
     }
 
+    /*@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof userLog)) return false;
+
+        userLog userLog = (userLog) o;
+
+        if (getName() != null ? !getName().equals(userLog.getName()) : userLog.getName() != null) return false;
+        return getData() != null ? getData().equals(userLog.getData()) : userLog.getData() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getData() != null ? getData().hashCode() : 0);
+        return result;
+    }
+*/
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -52,4 +70,6 @@ public class userLog {
             return false;
         return true;
     }
+
+   
 }
