@@ -1,5 +1,7 @@
 package com.company;
 
+import entities.Product;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -8,21 +10,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Map<String, String>cookies = new TreeMap<>();
-        cookies.put("userName","Maria");
-        cookies.put("email","maria@gmail.com");
-        cookies.put("phone", "99711122");
+        Map<Product, Double> estoque = new HashMap<>();
+        Product p1 = new Product("tv", 900.0);
+        Product p2 = new Product("Notebook", 1200.0);
+        Product p3 = new Product("tv", 400.0);
 
-        cookies.remove("email");
-        cookies.put("phone", "25252525");
 
-        System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
-        System.out.println("Phone number " + cookies.get("phone"));
-        System.out.println("email: " + cookies.get("email"));
-        System.out.println("Size" +cookies.size() );
-        System.out.println("All Cookies: ");
-        for (String key : cookies.keySet()){
-            System.out.println(key + " : " + cookies.get(key));
-        }
+        estoque.put(p1, 1.0000);
+        estoque.put(p2, 2.000);
+        estoque.put(p3, 3.000);
+
+        Product ps = new Product("tv", 900.00);
+
+        System.out.println("Constainer e:" + estoque.containsKey(ps));
     }
 }
