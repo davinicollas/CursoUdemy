@@ -19,7 +19,7 @@ public class Main {
         list.add(new Product ("Tablet", 350.00));
         list.add(new Product ("HD case", 80.90));
 
-        list.removeIf(Product::staticProductPredicate);
+        list.removeIf(Product::nonStaticProductPredicate);
 
         for(Product p : list){
             System.out.println(p);
