@@ -20,10 +20,8 @@ public class Main {
         list.add(new Product("Tablet", 350.00));
         list.add(new Product("HD case", 80.90));
         double factor = 1.1;
-        Consumer<Product> cons = product -> {
-            product.setPrice(product.getPrice()*factor);
-        };
-        list.forEach(cons);
+
+        list.forEach(product -> product.setPrice(product.getPrice()*factor));
         list.forEach(System.out::println);
     }
 }
