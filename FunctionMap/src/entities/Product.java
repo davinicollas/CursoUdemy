@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Locale;
+
 public class Product {
 
     private String name;
@@ -25,8 +27,8 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
-    public static boolean staticProductPredicate(Product product){
-        return product.getPrice() >= 100.00;
+    public static String staticNameUpdate(Product product){
+        return product.getName().toUpperCase();
     }
     public boolean nonStaticProductPredicate(){
         return price >= 100.00;
