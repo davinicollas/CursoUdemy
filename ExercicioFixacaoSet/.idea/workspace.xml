@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43135b08-443d-4ba5-a12c-a31df0a56cbe" name="Default Changelist" comment="" />
+    <list default="true" id="834a5499-f36f-4d9b-82ae-1986f20b3e12" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +23,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1pexBvrMmhMecc2BsomFm5xg6Yv" />
+  <component name="ProjectId" id="1pfNQ91nPMi6mfQYjHqLpEjSRVh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -87,7 +87,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="Stram" />
+      <module name="ExercicioFixacaoSet" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -95,20 +95,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43135b08-443d-4ba5-a12c-a31df0a56cbe" name="Default Changelist" comment="" />
-      <created>1615557225764</created>
+      <changelist id="834a5499-f36f-4d9b-82ae-1986f20b3e12" name="Default Changelist" comment="" />
+      <created>1615570168810</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615557225764</updated>
+      <updated>1615570168810</updated>
     </task>
     <servers />
   </component>
@@ -122,6 +117,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
