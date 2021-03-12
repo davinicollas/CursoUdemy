@@ -30,8 +30,8 @@ public class Product {
     public static String staticNameUpdate(Product product){
         return product.getName().toUpperCase();
     }
-    public boolean nonStaticProductPredicate(){
-        return price >= 100.00;
+    public String nonStaticNameUpdate(){
+        return name.toUpperCase();
     }
 
     @Override
