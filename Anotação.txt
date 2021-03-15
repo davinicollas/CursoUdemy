@@ -1,0 +1,62 @@
+Locale.setDefault(locale.us); -- Configurar em determinada região.
+scanner de dados;
+next-> texto
+nextint-> numero inteiro
+nextDouble-> numero double
+next().charAt(0)-> Caracteres
+nextLine()->quebra de linha;
+
+math.sqrt(X) raiz quadrada do x
+Math.pow(x,y) potencia de x elevado ao Y
+Math.abs(25.0)Variável A recebe o valor absoluto de x
+
+(condição) ? valor_verdadeiro : valor falso
+
+.toLowerCase() -- Letra minuscula
+l.toUpperCase(); -- letra maiuscula
+trim(); remove branco
+.substring(2) recuperar a letra da posição
+substring(2, 9); recupera nas duas posição
+replace('a', 'x') substituição
+replace("abc", "xy") subistuir na string na primeira pelo segunda
+.indexOf("bc") primeira posição do dado;
+lastIndexOf("bc"); ultima lastIndexOf("bc");
+split quebra a string em determinada posição
+
+publix static int max(int x, int y, int z) quando recebe variaveis;
+
+função que recebe vazio void;
+publix static void (variavel que recebe) função que nao retorna nada;
+
+
+git 
+
+git init
+git remote add origin  "HTTPS git"
+git pull origin "Branch"
+git add .
+git commit -m "Material de curso java"
+git push -u origin master
+
+
+
+
+Logica de tratamento de excecoes 
+logica 1 muito ruim pois a validação estava no programa principal
+• Lógica de validação não delegada à reserva
+logica 2 ruim metodos retorna strings
+• A semântica da operação é prejudicada
+• Retornar string não tem nada a ver com atualização de reserva
+• E se a operação tivesse que retornar um string?
+• Ainda não é possível tratar exceções em construtores
+• Ainda não há auxílio do compilador: o programador deve "lembrar" de verificar se houve
+erro
+• A lógica fica estruturada em condicionais aninhadas
+Logica 3 boa tratamento de excecões
+
+
+
+Ao usar o compareTo e necessario no return colocar a forma de como voce vai ordenar as informação
+sempre lembrar que o collection coloca o comparato quando tiver mais que um dado
+
+-salary.compareTo(o.getSalary());

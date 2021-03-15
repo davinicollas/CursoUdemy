@@ -1,0 +1,47 @@
+package udemy;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+/*public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int x =4;
+		int y = 0;
+		int i =0;
+		while(i<x) {
+			i = i+1;
+			y = y+i;
+			System.out.println(i);
+			System.out.println(y);
+
+		}
+		
+		sc.close();
+		
+	}
+
+}
+*/
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int senha;
+		System.out.println("Informe a senha");
+		senha = sc.nextInt();
+		while(senha == 2002) {
+			System.out.println("senha correta");
+
+		}
+		System.out.println("senha incorreta");
+		
+		sc.close();
+		
+	
+	}
+	}

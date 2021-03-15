@@ -1,0 +1,5 @@
+com\mycompany\shape\Application.class
+entitites\Circle.class
+entitites\Rectangule.class
+entitites\enums\Color.class
+entitites\Shape.class
